@@ -1,66 +1,42 @@
-Chat WebSocket
+#💬 Chat WebSocket
 
 Este projeto implementa um chat simples baseado em WebSocket, permitindo a troca de mensagens em tempo real entre usuários.
 
-📌 Funcionalidades
+##📌 Funcionalidades
 
-Login com nome de usuário e cor aleatória.
+✅ Login com nome de usuário e cor aleatória.✅ Envio e recebimento de mensagens em tempo real.✅ Diferenciação visual entre mensagens do usuário e de outros participantes.✅ Rolagem automática para a última mensagem.
 
-Envio e recebimento de mensagens em tempo real.
+##🛠 Tecnologias Utilizadas
 
-Diferenciação visual entre mensagens do usuário e de outros participantes.
+🔹 HTML, CSS e JavaScript puro (sem frameworks).🔹 WebSockets para comunicação em tempo real.
 
-Rolagem automática para a última mensagem.
+##📂 Estrutura do Código
 
-🛠 Tecnologias Utilizadas
+📌 Login Elements: Manipula a entrada do nome do usuário.📌 Chat Elements: Gerencia as mensagens enviadas e recebidas.📌 WebSocket Connection: Conecta ao servidor WebSocket para troca de mensagens.📌 Funções Auxiliares:
 
-HTML, CSS e JavaScript puro (sem frameworks).
+###🔹 createMessageSelfElement(content): Cria um elemento para mensagens do próprio usuário.
 
-WebSockets para comunicação em tempo real.
+###🔹 createMessageOtherElement(content, sender, senderColor): Cria um elemento para mensagens de outros usuários.
 
-📂 Estrutura do Código
+###🔹 getRandomColor(): Gera uma cor aleatória para o usuário.
 
-Login Elements: Manipula a entrada do nome do usuário.
+###🔹 scrollScreen(): Faz a rolagem automática para a última mensagem.
 
-Chat Elements: Gerencia as mensagens enviadas e recebidas.
+###🔹 processMessage(event): Processa as mensagens recebidas.
 
-WebSocket Connection: Conecta ao servidor WebSocket para troca de mensagens.
+###🔹 handleLogin(event): Trata o login do usuário e inicia a conexão WebSocket.
 
-Funções Auxiliares:
+###🔹 sendMessage(event): Envia mensagens pelo WebSocket.
 
-createMessageSelfElement(content): Cria um elemento para mensagens do próprio usuário.
+##🚀 Como Rodar o Projeto
 
-createMessageOtherElement(content, sender, senderColor): Cria um elemento para mensagens de outros usuários.
+###1️⃣ Certifique-se de ter um servidor WebSocket rodando na porta 8080.2️⃣ Salve o código acima em um arquivo index.js.3️⃣ Conecte esse código a uma página HTML contendo os elementos necessários.4️⃣ Abra a página no navegador e interaja com o chat.
 
-getRandomColor(): Gera uma cor aleatória para o usuário.
+##🔗 Melhorias Futuras
 
-scrollScreen(): Faz a rolagem automática para a última mensagem.
+###✨ Implementação de um backend para gerenciar conexões e histórico de mensagens.✨ Adição de estilos CSS para melhor experiência do usuário.✨ Suporte a múltiplas salas de chat.
 
-processMessage(event): Processa as mensagens recebidas.
+##📜 Licença
 
-handleLogin(event): Trata o login do usuário e inicia a conexão WebSocket.
-
-sendMessage(event): Envia mensagens pelo WebSocket.
-
-🚀 Como Rodar o Projeto
-
-Certifique-se de ter um servidor WebSocket rodando na porta 8080.
-
-Salve o código acima em um arquivo index.js.
-
-Conecte esse código a uma página HTML contendo os elementos necessários.
-
-Abra a página no navegador e interaja com o chat.
-
-🔗 Melhorias Futuras
-
-Implementação de um backend para gerenciar conexões e histórico de mensagens.
-
-Adição de estilos CSS para melhor experiência do usuário.
-
-Suporte a múltiplas salas de chat.
-
-📜 Licença
-
-Este projeto está sob a licença MIT. Sinta-se à vontade para usar e modificar!
+###Este projeto está sob a licença MIT. Sinta-se à vontade para usar e modificar!  🚀
 
