@@ -68,7 +68,7 @@ function sendMessage(event) { ... }
 
 ```bash
 # Comando para iniciar um servidor WebSocket simples (Node.js)
-npm install ws
+npm install
 node server.js
 ```
 
