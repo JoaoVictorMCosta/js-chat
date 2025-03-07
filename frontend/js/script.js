@@ -84,7 +84,7 @@ const handleLogin = (event) =>{
     login.style.display = "none";
     chat.style.display = "flex";
 
-    websocket = new WebSocket("wss://github.com/JoaoVictorMCosta/js-chat.git");
+    websocket = new WebSocket("wss://chat-backend-m99i.onrender.com");
      websocket.onmessage = processMessage;
 };
 
