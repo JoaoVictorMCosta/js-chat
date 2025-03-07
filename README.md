@@ -1,3 +1,5 @@
+# OLA MUNDO!
+
 # 💬 Chat WebSocket
 
 Este projeto implementa um **chat simples** baseado em WebSocket, permitindo a troca de mensagens em **tempo real** entre usuários.
